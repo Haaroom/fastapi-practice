@@ -12,3 +12,9 @@ class StudentResponse(BaseModel):
     name: str
     email: EmailStr
     age: int
+
+class StudentUpdate(BaseModel):
+    id :int 
+    name :str |None =None 
+    email:EmailStr|None = None 
+    age : int | None = None 
